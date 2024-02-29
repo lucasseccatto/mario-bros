@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mario Bros</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-header">
+        <img src="./assets/logo-header.png" alt="logo mario" />
+      </div>
+      <div class="links-header">
+        <a href="#">Home</a>
+        <a href="#">Nossos Serviços</a>
+        <a href="#">Fale Conosco</a>
+      </div>
+    </div>
+
+    <div class="main-div">
+      <div class="about-us-div">
+        <img
+          class="logo-mario"
+          src="./assets/logo.png"
+          alt="logo do mario bros"
+        />
+        <p>Encanadores Mario & Luigi - Resolvendo seus problemas com estilo!</p>
+        <p>
+          Você já se encontrou em uma situação de emergência com encanamento?
+          Vazamentos inesperados, canos entupidos ou torneiras que não param de
+          pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+          Apresentamos a vocês os encanadores mais famosos do Reino dos
+          Cogumelos - Mario & Luigi!
+        </p>
+        <button onclick="openContactForm()" class="contact-button">
+          Entre em contato
+        </button>
+      </div>
+
+      <div>
+        <img
+          class="logo-mario-luigi"
+          src="./assets//mario.png"
+          alt="logo mario e luigi"
+        />
+      </div>
+    </div>
+
+    <div class="video-div">
+      <video src="./assets/video.mp4" autoplay muted loop></video>
+      <div class="mask"></div>
+    </div>
+
+    <a
+      class="link-whatsapp"
+      href="https://wa.me/5511942545546?text=Ol%C3%A1%2C+quero+a+ajuda+dos+irm%C3%A3os+Mario+%26+Luigi%21"
+      target="_blank"
+    >
+      <img src="./assets//whatsapp.png" alt="link para o whatsapp" />
+    </a>
+
+    <div class="mask-form"></div>
+    <form
+      class="contact-us-form"
+      action="https://formcarry.com/s/BxA2CkbQzga"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <input placeholder="Seu nome" type="text" name="nome" />
+      <input placeholder="Seu telefone" type="tel" name="telefone" />
+      <textarea
+        placeholder="Digite seu problema aqui"
+        name="duvidas"
+      ></textarea>
+      <button type="submit">Pedir orçamento</button>
+    </form>
+  </body>
+  <script src="./scripts.js"></script>
+</html>
